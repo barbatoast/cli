@@ -2,8 +2,8 @@
 
 import readline
 
-def main():
-    print('Hello World!')
+def setup_cli():
+    readline.parse_and_bind('tab: complete')
 
 if __name__ == '__main__':
-    main()
+    setup_cli()
